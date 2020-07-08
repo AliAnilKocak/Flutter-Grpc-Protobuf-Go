@@ -1,0 +1,5 @@
+protoc -I=./protos --dart_out=grpc:./flutter_app/lib/pb --plugin=protoc-gen-dart=/home/anil/.pub-cache/bin/protoc-gen-dart ./protos/*.proto
+protoc -I=./protos --dart_out=grpc:./flutter_app/lib/pb --plugin=protoc-gen-dart=/home/anil/.pub-cache/bin/protoc-gen-dart ./protos/google/protobuf/*.proto
+
+protoc -I=./protos --go_out=plugins=grpc:./grpc_server/pb ./protos/*.proto
+
